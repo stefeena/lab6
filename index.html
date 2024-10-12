@@ -1,177 +1,276 @@
-<html class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
+<!-- language added in this code-->
+<html lang="en" class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
+
 <head>
-	<title>Untitled</title>
-	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
-	<script
-		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
-	<meta charset="utf-8">
-	<script>
-		document.write(wet.builder.refTop({
-			"isApplication": true
-		}));
-	</script><!--[if gte IE 9 | !IE ]><!-->
-	<link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon"
-		href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/assets/favicon-mobile.png">
-	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/css/theme.min.css">
-	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/cdtsfixes.css">
-	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/cdtsapps.css">
+    <title>Hi/Max Real Estate Website</title>
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
+    <meta charset="utf-8">
+    <script>
+        document.write(wet.builder.refTop({
+            "isApplication": true
+        }));
+    </script>
+    <link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon"
+        href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/assets/favicon-mobile.png">
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/css/theme.min.css">
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/cdtsfixes.css">
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/cdtsapps.css">
+    <style>
+        .social a svg {
+    width: 30px;
+    fill: #8b8c8e; /* color adjusted color */
+        }
 
-	<style>
-
- .social  a svg {
-      width: 30px;
-      fill: #91929a;
+    p {
+        margin-top: 0.1rem; /* Minimized spacing above paragraphs */
+        margin-bottom: 0.1rem; /* made spacing below paragraphs */
     }
-	</style>
+
+    table {
+        width: 100%; /* Full width for the table */
+        border-collapse: collapse; /* Combine borders */
+        background-color: #ffffff; /* add White background for table */
+        margin-bottom: 20px; /* added Space below the table */
+    }
+
+    th, td {
+        padding: 12px; /* Consistent padding for cells */
+        text-align: center; /* Center-align text in cells */
+        border: 1px solid #dddddd; /* added Light grey border for cells */
+    }
+
+    thead th {
+        background-color: #444; /* added Dark background for header */
+        color: #ffffff; /* added White text for header */
+        font-weight: bold; /* made Bold font for header */
+    }
+
+    th[scope="colgroup"] {
+        background-color: #666; /* added Slightly lighter dark color background for column groups */
+    }
+
+    tbody th {
+        background-color: #444; /* added Matching background for body header cells */
+        color: #ffffff; /* added White text for body header cells */
+    }
+
+    td {
+        color: #333333; /* Dark grey text for table data cells */
+    }
+
+    </style>
 </head>
 
 <body>
 
-	<div> <!-- start of search-->
-		<div id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
-			<h2>Search</h2>
+    <div class="Area for user search">
+        <!-- Start of search section -->
+        <div id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+            <h2>Search</h2>
 
-			<form action="/en/sr/srb.html" method="get" name="cse-search-box" role="search">
-				<div class="form-group wb-srch-qry">
-					<label for="wb-srch-q" class="wb-inv">Search Hi/Max.ca</label>
+            <form action="/en/sr/srb.html" method="get" name="cse-search-box" role="search">
+                <div class="form-group wb-srch-qry">
+                    <label for="wb-srch-q" class="wb-inv">Search Hi/Max.ca</label>
 
-					<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search"
-						value="" size="34" maxlength="170" placeholder="Search Hi/Max.ca">
-				</div>
-				<div class="form-group submit">
-					<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span
-							class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
-				</div>
-			</form>
+                    <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search"
+                        value="" size="34" maxlength="170" placeholder="Search Hi/Max.ca">
+                </div>
+                <div class="form-group submit">
+                    <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub">
+                        <span class="glyphicon-search glyphicon"></span>
+                        <span class="wb-inv">Search</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- End of search section -->
+    </div>
 
-		</div> <!--end of search-->
-	</div>
-	<div> <!-- start of header-->
+    <div>
+        <!-- Start of header section -->
+        <div class="app-bar">
+            <div class="container">
+                <div class="row">
+                    <section class="col-xs-12">
+                        <h2 class="wb-inv">Name of Web Application</h2>
+                        <a class="app-name" href="./index-en.html">Hi/Max Real Estate</a>
+                    </section>
+                </div>
+            </div>
+        </div>
 
-		<div class="app-bar">
-			<div class="container">
-				<div class="row">
-					<section class="col-xs-12">
-						<h2 class="wb-inv">Name of Web application</h2>
-						<a class="app-name" href="./index-en.html">Hi/Max Real Estate</a>
-					</section>
-				</div>
-			</div>
-		</div>
-
-		<div id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
-			class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
-			typeof="SiteNavigationElement">
-			<div class="pnl-strt container nvbar">
-				<h2>Topics menu</h2>
-				<div class="row">
-					<ul role="menubar" class="list-inline menu">
-						<li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
-								role="menuitem">Home</a></li>
-						<li><a class="item" href="internet-en.html" tabindex="-1" aria-posinset="2" aria-setsize="7"
-								role="menuitem">Buying</a></li>
-						<li><a class="item" href="intranet-en.html" tabindex="-1" aria-posinset="3" aria-setsize="7"
-								role="menuitem">Selling</a></li>
-						<li><a class="item" href="faq-en.html" tabindex="-1" aria-posinset="6" aria-setsize="7"
-								role="menuitem">FAQs</a></li>
-						<li><a class="item" href="contact-en.html" tabindex="-1" aria-posinset="7" aria-setsize="7"
-								role="menuitem">Contact us</a></li>
-					</ul>
-				</div>
-			</div>
-
-
-		</div> <!-- end of main navigation-->
-
-	</div> <!-- end of header-->
-
-	<main property="mainContentOfPage" class="container">
-		<h1>Welcome</h1>
-		<p>Content A here</p>
-		<div class="row">
-			<div class="col-md-4 pull-right">
-				<p></p>Content B here
-			</div>
-			<div class="col-md-8">
-				<p>Content C here</p>
+                <nav id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
+            class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
+            typeof="SiteNavigationElement" aria-label="Main Navigation">
+            <div class="pnl-strt container nvbar">
+                <h2>Navigation Topics Menu</h2>
+                <div class="row">
+                    <ul role="menubar" class="list-inline menu">
+                        <li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
+                                role="menuitem">Home</a></li>
+                        <li><a class="item" href="internet-en.html" tabindex="0" aria-posinset="2" aria-setsize="7"
+                                role="menuitem">Buying</a></li>
+                        <li><a class="item" href="intranet-en.html" tabindex="0" aria-posinset="3" aria-setsize="7"
+                                role="menuitem">Selling</a></li>
+                        <li><a class="item" href="faq-en.html" tabindex="0" aria-posinset="6" aria-setsize="7"
+                                role="menuitem">FAQs</a></li>
+                        <li><a class="item" href="contact-en.html" tabindex="0" aria-posinset="7" aria-setsize="7"
+                                role="menuitem">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
-			</div>
-		</div>
-		<div class="clear"></div>
-		<div>Content D here</div>
-		<div class="row">
-			<div class="col-md-4 ">
-				<p>Content F here</p>
-			</div>
-			<div class="col-md-4">
-				<p>Content G here</p>
+        <!-- End of main navigation -->
+    </div>
 
-			</div>
-			<div class="col-md-4">
-				<p>Content H here</p>
+    <!-- Main content section -->
+    <main property="mainContentOfPage" class="container" id="main-content" role="main section">
 
-			</div>
-		</div>
-		<div class="pagedetails">
-			<dl id="wb-dtmd">
-				<dt>Date modified: </dt>
-				<dd><time property="dateModified">2023-10-13</time></dd>
-			</dl>
-		</div>
+        <!-- aria-label added -->
+
+        <h1>Welcome to Hi/Max Real Estate</h1>
+        <p>Hi/Max Real Estate & Houses</p>
+        <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</p>
+        <p><a href="#" aria-label="Get started with Hi/Max Real Estate" role="link">Let's get started!</a></p>
 
 
-	</main>
-	<div id="wb-info" class=" wb-navcurr-inited">
-		<div class="gc-sub-footer">
-			<div class="container d-flex align-items-center">
-				<div>
-					<h3 class="wb-inv" id="aboutWebApp">Hi/Max Real Estate</h3>
-					<ul>
-						<li><a href="#">About the company</a></li>
-						<li><a href="#">Privacy policy</a></li>
-						<li><a href="#">Accessibility statement</a></li>
-						<li style="list-style: none;" class="social">
-						<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-						  <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path>
-						</svg></a></li>
-						
-					  </ul>	
-				</div>
+        <div class="row">
+            <!-- Added particluar roles to list items -->
+            <div class="col-md-4 pull-right" role="complementary" aria-labelledby="related-resources">
+                <h2 id="related-resources">Related Resources</h2>
+                <p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.</p>
+                <ul role="navigation" aria-label="Related resources links">
+                    <li role="link to upgrading house">
+                        <a href="#" target="_blank" aria-label="Looking for an upgrade? (opens in a new tab)">Looking for an upgrade?</a>
+                    </li>
+                    <li role="link to buying tips">
+                        <a href="#" target="_blank" aria-label="Buying tips (opens in a new tab)">Buying tips</a>
+                    </li>
+                    <li role="link to home valuation">
+                        <a href="#" target="_blank" aria-label="How much is your current home worth? (opens in a new tab)">How much is your current home worth?</a>
+                    </li>
+                </ul>
+                
+            </div>
 
-				<div class="col-xs-6 visible-sm visible-xs tofpg">
-					<a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
-				</div>
-
-			</div>
-		</div>
-	</div> <!-- end of footer-->
-
-	<script>
-		var defFooter = document.getElementById("def-footer");
-		defFooter.outerHTML = wet.builder.appFooter({
-			"contactLink": "./contact-en.html"
-		});
-	</script>
-	<!-- Write closure template -->
-	<script>
-		document.write(wet.builder.refFooter({
-			"isApplication": true
-		}));
-	</script><!--[if gte IE 9 | !IE ]><!-->
-	<script
-		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/jquery/2.2.4/jquery.min.js"></script>
-	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/wet-boew.min.js"></script><span
-		id="wb-rsz" class="wb-init">&nbsp;</span>
-	<!--<![endif]-->
-	<!--[if lt IE 9]>
-  <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/ie8-wet-boew2.min.js"></script>
-  <![endif]-->
-	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/theme.min.js"></script>
-	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/cdtscustom.js"></script>
+            <div class="col-md-8">
+                <h2 id="why-choose-hi-max" aria-label="Reasons to Choose HI/Max">Why Choosing HI/Max</h2>
+                <p id="hi-max-description" aria-label="HI/Max agents are dedicated to providing exceptional service and community involvement.">Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community-focused, and our agents are too!</p>
+                <h3 id="hi-max-stats" aria-label="Statistics and Facts about HI/Max">Stats of HI/Max</h3>
 
 
+            <!-- Improved table accessibility through the use of ARIA roles, headers, and properties. -->
 
+            <table class="table table-bordered" role="table" aria-label="Real Estate Market Data">
+                <thead>
+                    <tr role="row" aria-labelledby="year-header sold-properties-header avg-price-header">
+                        <th id="year-header" rowspan="2" scope="col" aria-label="Year of Data">Year</th>
+                        <th id="sold-properties-header" colspan="2" aria-label="Sold Properties">Sold Properties</th>
+                        <th id="avg-price-header" colspan="2" aria-label="Average Selling Price">Average Selling Price</th>
+                    </tr>
+                    <tr role="row" aria-labelledby="quebec-header ontario-header single-house-header condo-header">
+                        <th id="quebec-header" scope="col" aria-label="Number of properties sold in Quebec">Quebec</th>
+                        <th id="ontario-header" scope="col" aria-label="Number of properties sold in Ontario">Ontario</th>
+                        <th id="single-house-header" scope="col" aria-label="Average selling price of single houses">Single House</th>
+                        <th id="condo-header" scope="col" aria-label="Average selling price of condos">Condo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr role="row" aria-labelledby="row1">
+                        <td id="row1-col1" scope="row" aria-label="Data for the year 2021">2021</td>
+                        <td id="row1-col2" aria-labelledby="quebec-header" aria-label="Number of properties sold in Quebec in 2021">50</td>
+                        <td id="row1-col3" aria-labelledby="ontario-header" aria-label="Number of properties sold in Ontario in 2021">100</td>
+                        <td id="row1-col4" aria-labelledby="single-house-header" aria-label="Average selling price of single houses in 2021">$500,000</td>
+                        <td id="row1-col5" aria-labelledby="condo-header" aria-label="Average selling price of condos in 2021">$189,000</td>
+                    </tr>
+                    <tr role="row" aria-labelledby="row2">
+                        <td id="row2-col1" scope="row" aria-label="Data for the year 2022">2022</td>
+                        <td id="row2-col2" aria-labelledby="quebec-header" aria-label="Number of properties sold in Quebec in 2022">100</td>
+                        <td id="row2-col3" aria-labelledby="ontario-header" aria-label="Number of properties sold in Ontario in 2022">200</td>
+                        <td id="row2-col4" aria-labelledby="single-house-header" aria-label="Average selling price of single houses in 2022">$780,000</td>
+                        <td id="row2-col5" aria-labelledby="condo-header" aria-label="Average selling price of condos in 2022">$240,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+
+            </div>
+        </div>
+        
+        
+
+
+        <!--"Consolidated title for Content D, with each section organized using section tags."-->
+        <div>
+            <h2>More Resources on How to Choose the Right Agent</h2>
+            <div class="row">
+                <!-- Content F -->
+                <section class="col-md-4">
+                    <img src="1.png" alt="Risks of Selling a Home Yourself" aria-label="Image representing risks of selling a home yourself" class="img-fluid">
+                    <h3>What Are The Risks of Selling a Home Yourself?</h3>
+                    <p>We’ve all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project that would have been better left to the professionals.</p>
+                    <p><a href="#">Read more</a></p>
+                </section>
+                <!-- Content G -->
+                <section class="col-md-4">
+                    <img src="2.png" alt="Questions to Ask a Real Estate Agent" aria-label="Image of a person asking questions to a real estate agent" class="img-fluid">
+                    <h3>7 Questions to Ask a Real Estate Agent Before You Commit</h3>
+                    <p>According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent, including higher sale prices.</p>
+                </section>
+                <!-- Content H -->
+                <section class="col-md-4">
+                    <img src="3.png" alt="Reasons to Hire a Real Estate Agent" aria-label="Image showing reasons to hire a real estate agent" class="img-fluid">
+                    <h3>8 Reasons to Hire an Agent When Selling Your Home</h3>
+                    <p>With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent on speed dial.</p>
+                </section>
+            </div>
+        </div>
+        
+        <div class="pagedetails">
+            <dl id="wb-dtmd">
+                <dt>Date modified:</dt>
+                <dd><time property="dateModified">2023-10-13</time></dd>
+            </dl>
+        </div>
+    </main>
+    <!-- End of main content section -->
+
+   
+    <!-- Footer section -->
+    <footer id="wb-info" class="wb-navcurr-inited">
+        <div class="gc-sub-footer">
+            <div class="container d-flex align-items-center">
+                <div>
+                    <h3 class="wb-inv" id="aboutWebApp">Hi/Max Real Estate</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="ml-auto">
+                    <ul class="list-inline social">
+                       
+                        <li>
+                            <!-- aria labels are added to improve accessibility-->
+                            <a href="https://www.linkedin.com" aria-label="Visit LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="linkedinIconTitle linkedinIconDesc" role="img">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- End of footer section -->
+
+    
 </body>
 
 </html>
